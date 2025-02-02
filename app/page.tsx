@@ -1,10 +1,17 @@
 import Image from "next/image";
+import { button } from "daisyui";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <h1 className="text-4xl font-bold">Hello World</h1>
+        <button
+  className="inline-block cursor-pointer rounded-md bg-gray-800 px-4 py-3 text-center text-sm font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-gray-900">
+  Button
+</button>
+<button class="btn btn-primary">Button</button>
+
         <Image
           className="dark:invert"
           src="/next.svg"
